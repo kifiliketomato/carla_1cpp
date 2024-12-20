@@ -147,6 +147,7 @@ except ImportError:
 
 def find_weather_presets():
     # 使用正则表达式分割字符串，匹配单词边界
+    # 使用正则表达式分割字符串，匹配单词边界
     rgx = re.compile('.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)')
     # 使用正则表达式分割字符串，匹配单词边界
     name = lambda x: ' '.join(m.group(0) for m in rgx.finditer(x))
